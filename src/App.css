@@ -1,36 +1,7 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 .card {
@@ -39,4 +10,170 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.jobCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.jobCardContainer .job-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px !important;
+  gap: 10px;
+  padding: 8px 16px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.logoContaie {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.logoBox {
+  width: 30px;
+  height: 30px;
+}
+
+.logoBox img {
+  width: 100%;
+  height: 100%;
+}
+
+.logoContent p {
+  margin-bottom: 0 !important;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.logoContent h3 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+  color: #8b8b8b;
+}
+
+.expSal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.expSal p {
+  font-size: 14px !important;
+  font-weight: 500;
+  margin: 8px 0 !important;
+}
+.expSal span {
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.aboutComp {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.aboutComp p {
+  margin: 0;
+  margin: 0px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.aboutComp span {
+  margin: 0;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.mainDesc {
+  white-space: pre-wrap;
+  font-size: 14px;
+  margin: 0;
+  /* transition: 0.2s all; */
+}
+
+.mainDesc {
+  max-height: 100px; /* Adjust as needed */
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; /* Transition effect */
+}
+
+.mainDesc.expanded {
+  max-height: none; /* Expanding to full height */
+}
+
+.controlButton {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.controlButton span {
+  color: white;
+  background-color: tomato;
+  padding: 10px 22px;
+  border-radius: 15px 5px;
+}
+
+.expe {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.expe p {
+  margin: 0;
+}
+
+.easyAply {
+  width: 100%;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(85, 239, 196);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(85, 239, 196);
+  font-weight: 500;
+  padding: 8px 18px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.easyAply:hover {
+  width: 100%;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  color: rgb(85, 239, 196);
+  border: 2px solid rgb(85, 239, 196);
+  font-weight: 500;
+  padding: 8px 18px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
 }
